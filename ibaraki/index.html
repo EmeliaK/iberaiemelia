@@ -13,9 +13,9 @@
         td.ks { background: aliceblue; }
         td.k { transition: background 0.1s linear; }
         tbody:hover > tr > .k { background: inherit; }
-        tbody:hover > tr > .k > b { filter: brightness(200%); }
+        tbody:hover > tr > .k > b { filter: brightness(150%); }
         td.k > b > a { text-decoration: none; }
-        td.k > b > a:hover { text-decoration: underline; }
+        td.k > b > a:hover { text-decoration: underline; text-shadow: 0 0 4px thistle; }
         
         td.db { background: darkseagreen; }
         td.dn { background: cornflowerblue; }
@@ -31,7 +31,7 @@
         td.dl > a { text-decoration: none; filter: grayscale(100%) contrast(1000%); }
         
         
-        b { color: teal; text-shadow: 0 0 4px thistle; transition: filter 0.1s linear; }
+        b { color: teal; text-shadow: 0 0 4px thistle; transition: filter 0.1s linear, text-shadow 0.1s linear; }
         td.t > b { color: inherit; float: right; margin-left: 5.5px; }
         
         sup { font-style: italic; padding-left: 2px; line-height: 0; }
@@ -127,6 +127,7 @@
             <td class="dl"></td></tr></tbody>
         </table>
         
+        <p><sup><a href="https://wcko87.github.io/beatoraja-english-guide/" style="color: silver">what is BMS?</a></sup></p>
         <p><sub style="color: silver;">last updated 2024-04-16 (2): download links</sub></p>
     </body>
 </html>
