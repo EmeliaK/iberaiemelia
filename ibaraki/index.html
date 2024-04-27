@@ -1,13 +1,20 @@
 <!DOCTYPE html>
     <head>
-        <title>茨木童子の脳ミソ</title>
+        <title>茨木童子の脳ミソ [240427]</title><link rel="icon" type="image/x-icon" href="ibaraki.png">
         <style>
-        body { text-align: center; }
+        body { text-align: center; background-image: url(latha.png); background-attachment: fixed; margin:0;
+               font-family: serif; letter-spacing: 0px; word-spacing: 0px; }
+        th, .crystal { background: #FFF2; box-shadow: 1px 1px 2.5px 2.5px #0001, -1px -1px 3px 3px #0001; }
+        th, .ibarakiportrait { background: #FFF3; background-image: url(ibaraki_portrait.png); background-attachment: fixed; background-position: right top; background-repeat: no-repeat; }
+        .topbottomdrop { box-shadow: 2px 0px 4px 2px #0004, -2px 0px 4px 2px #0004; text-shadow: 0 0 5px white; }
         
-        table { border-collapse: separate; margin: auto; }
+        table { border-collapse: separate; margin: auto; opacity: 100%; border-spacing: 0px; }
+        tbody { mix-blend-mode: normal; transition: mix-blend-mode 0.1s linear; margin: 0; }
+        tbody:hover { mix-blend-mode: multiply; }
+        tbody > tr > td:not(.d, .tt) { background-position: 120% top; transition: background 0.3s cubic-bezier(.1,.99,.48,1); }
+        tbody:hover > tr > td:not(.d, .tt) { background-image: url(ibaraki_portrait_transp.png); background-attachment: fixed; background-position: right top; background-repeat: no-repeat; }
         th, td { padding-left: 8px; padding-right: 8px; padding-top: 6px; padding-bottom: 6px; }
-        td { border: 1px dotted black; }
-
+        td { border: 1px dotted #0000; }
 
         td.kf { background: lemonchiffon; }
         td.ks { background: aliceblue; }
@@ -23,7 +30,7 @@
         td.da { background: firebrick; }
         td.di { background: #100000; }
         td.d { font-weight: bold; color: white; text-shadow: 0 0 1.5px black; transition: background 0.1s linear; }
-        tbody:not(:hover) > tr > .d { background: inherit; }
+        tbody:not(:hover) > tr > td.d { background: inherit; }
         
         td.g { text-align: right; }
         td.t { text-align: left; }
@@ -40,7 +47,6 @@
         a:hover { color: inherit; filter: invert(100%); }
         td.dl > a:hover { text-decoration: underline; filter: grayscale(100%) contrast(1000%) invert(100%); }
         
-        
         .tt { position: relative; background-image: linear-gradient(to top left, #0005, #FFF5); font-style: italic; user-select: none; }
         .tt .tttext { visibility: hidden; background-color: rgba(0,0,0,0.75); color: white; text-shadow: 0 0 4px black; font-weight: normal; font-size: 70%;
                       padding: 3px 3px; border: 1px solid black; border-top-left-radius: 8px; border-bottom-right-radius: 8px;
@@ -51,8 +57,8 @@
 
     <body>
 
-        <h1>断善修悪の怪腕</h1>
-        <h3>茨木童子の腕・差分一覧</h3>
+        <h1 class="ibarakiportrait topbottomdrop" style="margin: 21px 0px; padding: 22px;">断善修悪の怪腕</h1>
+        <h3 class="ibarakiportrait topbottomdrop" style="padding: 5px;">茨木童子の腕・差分一覧</h3>
 
         <table><tr><th>tuts</th><th>vanske</th><th>žanras</th><th>dáiddár / tocaitl</th><th>...</th><th>情報</th><th>nota</th><th>огноо</th><th>↓</th></tr>
 
@@ -63,7 +69,7 @@
             <td class="t">haleit - Drifting</td>
             <td></td>
             <td>597 notes, 240 total, NORMAL judge</td>
-            <td class="n" rowspan="2">inc. empty file<br/>差分用の空付き</td>
+            <td class="n" rowspan="2">inc. empty file<br/>空(差分用)同梱</td>
             <td class="date">2024-04-11</td>
             <td class="dl" rowspan="2"><a href="https://drive.google.com/file/d/19-QCj3IqVfElcazzFAk9bmzKWaHbHtik/view?usp=drive_link">💾</a></td></tr>
         <tr><td class="k ks"><b><a href="https://bmssearch.net/bmses/XN4AwP_kdPe9V6">▞▞▞▖●</a></b></td>
@@ -106,28 +112,53 @@
         
         <tbody style="background-image: linear-gradient(75deg, #756BDF, #D2172F); color: white; text-shadow: 0 0 5px #0008;">
         <tr><td class="k kf"><b><a href="https://k-bms.com/party_pabat/party.jsp?board_num=23&num=17&order=reg&odtype=a">▞▞▖●</a></b></td>
-            <td class="d">?</td>
+            <td class="d dn">☆3</td>
+            <td class="g">Shibuya-kei / Jazz Fusion</td>
+            <td class="t">Lunaticat - Cerise <b>[5K Normal]</b></td>
+            <td></td>
+            <td>272 notes, 222 total, EASY judge</td>
+            <td class="n" rowspan="3"><a href="https://www.youtube.com/watch?v=-wirZE5d2rE">BGA付き</a><br/>79BPM動画同梱<br/><br/>► BMSS2023</td>
+            <td class="date">2024-04-23</td>
+            <td class="dl" rowspan="3"></td></tr>
+        <tr><td class="k kf"><b><a href="https://k-bms.com/party_pabat/party.jsp?board_num=23&num=17&order=reg&odtype=a">▞▞▖●</a></b></td>
+            <td class="d dh">☆5</td>
+            <td class="g">Shibuya-kei / Jazz Fusion</td>
+            <td class="t">Lunaticat - Cerise <b>[5K Hard]</b></td>
+            <td></td>
+            <td>518 notes, 333 total, EASY judge</td>
+            <td class="date">2024-04-23</td></tr>
+        <tr><td class="k kf"><b><a href="https://k-bms.com/party_pabat/party.jsp?board_num=23&num=17&order=reg&odtype=a">▞▞▖●</a></b></td>
+            <td class="d da">☆7</td>
             <td class="g">Shibuya-kei / Jazz Fusion</td>
             <td class="t">Lunaticat - Cerise <b>[Slumberland, 5:05 AM]</b></td>
             <td></td>
-            <td>? notes, ? total, NORMAL judge</td>
-            <td class="n">► BMSS2023</td>
-            <td class="date">???</td>
-            <td class="dl"></td></tr></tbody>
+            <td>774 notes, 279 total, EASY judge</td>
+            <td class="date">2024-04-23</td></tr></tbody>
         
         <tbody style="background-image: linear-gradient(120deg, #F5FDFA, #46D7CA); color: #1086A3; text-shadow: 0 0 5px #FFF8;">
         <tr><td class="k kf"><b><a href="https://k-bms.com/party_pabat/party.jsp?board_num=23&num=1&order=reg&odtype=a">▞▞▖●</a></b></td>
-            <td class="d">?</td>
+            <td class="d dn">☆6</td>
             <td class="g">qlean room ambient</td>
             <td class="t">Reku Mochizuki - Aseptiqa <b>[Intra5enous]</b></td>
             <td></td>
-            <td>? notes, ? total, NORMAL judge</td>
+            <td>544 notes, 234 total, NORMAL judge</td>
             <td class="n">► BMSS2023</td>
-            <td class="date">???</td>
+            <td class="date">2024-04-18</td>
+            <td class="dl"></td></tr></tbody>
+
+        <tbody style="background-image: linear-gradient(90deg, #AB88B9, #BD85B2, #827DB5, #BD85B2, #AB88B9, #BD85B2, #AB88B9, #827DB5, #AB88B9); color: #F3F3F5; text-shadow: 0 0 2px #FFF2;">
+        <tr><td class="k kf"><b><a href="https://venue.bmssearch.net/genreshuffle4/16">▞▞▖●</a></b></td>
+            <td class="d">?</td>
+            <td class="g">NEO SOUL</td>
+            <td class="t">ですワ - whatdotheysay? <b>[withthesunlight]</b></td>
+            <td></td>
+            <td>? notes, ? total, ? judge</td>
+            <td class="n"></td>
+            <td class="date">?</td>
             <td class="dl"></td></tr></tbody>
         </table>
         
-        <p><sup><a href="https://wcko87.github.io/beatoraja-english-guide/" style="color: silver">what is BMS?</a></sup></p>
-        <p><sub style="color: silver;">last updated 2024-04-16 (2): download links</sub></p>
+        <p><sup style="margin: 0; padding: 4px; background: #FFFC;"><a href="https://wcko87.github.io/beatoraja-english-guide/" style="color: silver">what is BMS?</a></sup></p>
+        <p><sub style="margin: 0; padding: 4px; color: silver; background: #FFFC;">last updated 2024-04-27: site design</sub></p>
     </body>
 </html>
